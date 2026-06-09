@@ -526,3 +526,136 @@
 @media (max-width: 768px) {
   .post-media-grid { grid-template-columns: 1fr; }
 }
+
+
+/* ── ESTILOS AUTOMÁTICOS PARA CONTENIDO MARKDOWN DEL CMS ── */
+
+/* párrafos */
+.post-content > p {
+  font-family: 'Lato', sans-serif;
+  font-size: 17px;
+  line-height: 1.9;
+  color: #5a3e2a;
+  margin-bottom: 24px;
+}
+
+/* h2 con underline animado */
+.post-content > h2 {
+  font-family: 'new-spirit', 'Playfair Display', serif;
+  font-size: 26px;
+  font-weight: 500;
+  color: var(--marron-texto);
+  margin: 40px 0 16px;
+  position: relative;
+  display: inline-block;
+  opacity: 0;
+  transform: translateX(-16px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.post-content > h2::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--verde-claro);
+  transition: width 0.6s ease 0.3s;
+}
+
+.post-content > h2.visible { opacity: 1; transform: translateX(0); }
+.post-content > h2.visible::after { width: 100%; }
+
+/* h3 */
+.post-content > h3 {
+  font-family: 'new-spirit', 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--marron-texto);
+  margin: 32px 0 12px;
+}
+
+/* blockquote → estilo post-quote */
+.post-content blockquote {
+  border-left: 3px solid transparent;
+  padding: 20px 28px;
+  margin: 32px 0;
+  background: rgba(98,115,86,0.0);
+  border-radius: 0 12px 12px 0;
+  border-color: var(--verde-oscuro);
+  background: rgba(98,115,86,0.08);
+}
+
+.post-content blockquote p {
+  font-family: 'ShinyMarker', serif !important;
+  font-style: normal;
+  font-size: 22px !important;
+  color: var(--verde-oscuro) !important;
+  margin: 0 !important;
+  line-height: 1.6 !important;
+}
+
+/* listas */
+.post-content ul,
+.post-content ol {
+  list-style: none;
+  margin: 16px 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+}
+
+.post-content ul li,
+.post-content ol li {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #5a3e2a;
+  padding-left: 20px;
+  position: relative;
+}
+
+.post-content ul li::before {
+  content: '·';
+  position: absolute;
+  left: 0;
+  color: var(--verde-oscuro);
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.post-content ol {
+  counter-reset: item;
+}
+
+.post-content ol li::before {
+  content: counter(item) ".";
+  counter-increment: item;
+  position: absolute;
+  left: 0;
+  color: var(--verde-oscuro);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* strong y em */
+.post-content strong { font-weight: 700; color: var(--marron-texto); }
+.post-content em { font-style: italic; }
+
+/* hr → separador */
+.post-content hr {
+  border: none;
+  border-top: 0.5px solid var(--verde-claro);
+  margin: 40px 0;
+  opacity: 0.6;
+}
+
+/* imágenes inline */
+.post-content img {
+  width: 100%;
+  border-radius: 12px;
+  margin: 24px 0;
+  display: block;
+}

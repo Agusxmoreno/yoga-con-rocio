@@ -142,7 +142,6 @@
       padding: 48px 40px 0;
     }
 
-    
  
     .post-categoria {
       font-family: 'ShinyMarker', serif;
@@ -244,6 +243,17 @@
       background: var(--verde-claro);
       opacity: 0.6;
     }
+
+    .post-ilu-break img:nth-of-type(2) {
+  width: 28px;
+  animation: spinSlow 12s linear infinite;
+  transform-origin: center;
+}
+
+.post-ilu-break img:nth-of-type(3) {
+  width: 36px;
+  animation: floatGentle 5s ease-in-out 1s infinite;
+}
  
     /* párrafos */
     .post-content p {

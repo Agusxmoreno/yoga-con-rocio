@@ -1,10 +1,10 @@
     @font-face {
       font-family: 'ShinyMarker';
-      src: url('../Shiny_Marker_Regular.otf') format('opentype');
+      src: url('/Shiny_Marker_Regular.otf') format('opentype');
     }
     @font-face {
       font-family: 'SundayMorning';
-      src: url('../SUNDAY_MORNING.OTF') format('opentype');
+      src: url('/SUNDAY_MORNING.OTF') format('opentype');
     }
  
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }

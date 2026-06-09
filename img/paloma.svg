@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 296.84 296.84">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: #f2e2c4;
+      }
+
+      .cls-2 {
+        font-family: ShinyMarker, 'Shiny Marker';
+      }
+
+      .cls-2, .cls-3 {
+        font-size: 21.04px;
+      }
+
+      .cls-4 {
+        isolation: isolate;
+      }
+
+      .cls-5 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
+      }
+
+      .cls-6 {
+        mix-blend-mode: multiply;
+        opacity: .15;
+      }
+
+      .cls-7 {
+        fill: #bf612a;
+      }
+
+      .cls-3 {
+        font-family: MyriadPro-Regular, 'Myriad Pro';
+      }
+
+      .cls-8 {
+        fill: #627356;
+      }
+    </style>
+  </defs>
+  <g class="cls-4">
+    <g id="Capa_2" data-name="Capa 2">
+      <g id="Capa_1-2" data-name="Capa 1">
+        <g>
+          <g>
+            <image class="cls-6" width="182" height="182" transform="translate(0 16.69) rotate(-3.41) scale(1.54)" xlink:href="data:image/png;base64,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"/>
+            <g>
+              <circle class="cls-8" cx="145.11" cy="145.57" r="127.16"/>
+              <circle class="cls-5" cx="145.11" cy="145.57" r="127.16"/>
+            </g>
+          </g>
+          <text class="cls-2" transform="translate(80.68 76.52) rotate(-40.2)"><tspan x="0" y="0">Y</tspan></text>
+          <text class="cls-2" transform="translate(89.62 69.15) rotate(-33.29)"><tspan x="0" y="0">O</tspan></text>
+          <text class="cls-2" transform="translate(99.07 63.11) rotate(-26.64)"><tspan x="0" y="0">G</tspan></text>
+          <text class="cls-2" transform="translate(108.58 58.46) rotate(-19.92)"><tspan x="0" y="0">A</tspan></text>
+          <text class="cls-2" transform="translate(119.41 54.75) rotate(-14.08)"><tspan x="0" y="0"> </tspan></text>
+          <text class="cls-2" transform="translate(126.87 52.91) rotate(-8.42)"><tspan x="0" y="0">C</tspan></text>
+          <text class="cls-2" transform="translate(137.71 51.43) rotate(-1.78)"><tspan x="0" y="0">O</tspan></text>
+          <text class="cls-2" transform="translate(148.89 51.17) rotate(5.43)"><tspan x="0" y="0">N</tspan></text>
+          <text class="cls-2" transform="translate(161.53 52.62) rotate(11.64)"><tspan x="0" y="0"> </tspan></text>
+          <text class="cls-2" transform="translate(169.06 54.19) rotate(17.51)"><tspan x="0" y="0">R</tspan></text>
+          <text class="cls-2" transform="translate(179.9 57.75) rotate(24.41)"><tspan x="0" y="0">O</tspan></text>
+          <text class="cls-2" transform="translate(190.06 62.52) rotate(31.13)"><tspan x="0" y="0">C</tspan></text>
+          <text class="cls-2" transform="translate(199.34 68.35) rotate(36.57)"><tspan x="0" y="0">I</tspan></text>
+          <text class="cls-2" transform="translate(204.99 72.55) rotate(42.1)"><tspan x="0" y="0">O</tspan></text>
+          <text class="cls-2" transform="translate(213.23 80.26) rotate(47.83)"><tspan x="0" y="0"> </tspan></text>
+          <text class="cls-2" transform="translate(218.37 86.08) rotate(52.53)"><tspan x="0" y="0"> </tspan></text>
+          <text class="cls-3" transform="translate(223.01 92.27) rotate(57.36)"><tspan x="0" y="0">•</tspan></text>
+          <text class="cls-2" transform="translate(227.34 99.23) rotate(62.22)"><tspan x="0" y="0"> </tspan></text>
+          <text class="cls-2" transform="translate(230.86 106.11) rotate(66.94)"><tspan x="0" y="0"> </tspan></text>
+          <text class="cls-2" transform="translate(233.83 113.19) rotate(72.56)"><tspan x="0" y="0">V</tspan></text>
+          <text class="cls-2" transform="translate(236.74 122.64) rotate(78.83)"><tspan x="0" y="0">A</tspan></text>
+          <text class="cls-2" transform="translate(238.82 133.83) rotate(85.64)"><tspan x="0" y="0">L</tspan></text>
+          <text class="cls-2" transform="translate(239.55 145.08) rotate(92.34)"><tspan x="0" y="0">E</tspan></text>
+          <text class="cls-2" transform="translate(239.01 156.13) rotate(99.57)"><tspan x="0" y="0">N</tspan></text>
+          <text class="cls-2" transform="translate(236.71 168.61) rotate(106.78)"><tspan x="0" y="0">C</tspan></text>
+          <text class="cls-2" transform="translate(233.35 179.06) rotate(112.28)"><tspan x="0" y="0">I</tspan></text>
+          <text class="cls-2" transform="translate(230.68 185.57) rotate(117.92)"><tspan x="0" y="0">A</tspan></text>
+          <text class="cls-2" transform="translate(225.13 195.61) rotate(123.73)"><tspan x="0" y="0"> </tspan></text>
+          <text class="cls-3" transform="translate(220.76 202) rotate(128.54)"><tspan x="0" y="0">•</tspan></text>
+          <text class="cls-2" transform="translate(215.58 208.34) rotate(133.34)"><tspan x="0" y="0"> </tspan></text>
+          <text class="cls-2" transform="translate(210.29 213.92) rotate(139.18)"><tspan x="0" y="0">Y</tspan></text>
+          <text class="cls-2" transform="translate(201.46 221.37) rotate(146.07)"><tspan x="0" y="0">O</tspan></text>
+          <text class="cls-2" transform="translate(192.06 227.52) rotate(152.72)"><tspan x="0" y="0">G</tspan></text>
+          <text class="cls-2" transform="translate(182.6 232.28) rotate(159.45)"><tspan x="0" y="0">A</tspan></text>
+          <text class="cls-2" transform="translate(171.81 236.11) rotate(165.3)"><tspan x="0" y="0"> </tspan></text>
+          <text class="cls-2" transform="translate(164.35 238.03) rotate(170.97)"><tspan x="0" y="0">C</tspan></text>
+          <text class="cls-2" transform="translate(153.58 239.62) rotate(177.59)"><tspan x="0" y="0">O</tspan></text>
+          <text class="cls-2" transform="translate(142.38 240.01) rotate(-175.21)"><tspan x="0" y="0">N</tspan></text>
+          <text class="cls-2" transform="translate(129.7 238.69) rotate(-168.98)"><tspan x="0" y="0"> </tspan></text>
+          <text class="cls-2" transform="translate(122.16 237.21) rotate(-163.12)"><tspan x="0" y="0">R</tspan></text>
+          <text class="cls-2" transform="translate(111.3 233.77) rotate(-156.22)"><tspan x="0" y="0">O</tspan></text>
+          <text class="cls-2" transform="translate(101.09 229.12) rotate(-149.51)"><tspan x="0" y="0">C</tspan></text>
+          <text class="cls-2" transform="translate(91.73 223.38) rotate(-144.05)"><tspan x="0" y="0">I</tspan></text>
+          <text class="cls-2" transform="translate(86.03 219.24) rotate(-138.52)"><tspan x="0" y="0">O</tspan></text>
+          <text class="cls-2" transform="translate(77.71 211.62) rotate(-132.79)"><tspan x="0" y="0"> </tspan></text>
+          <text class="cls-2" transform="translate(72.53 205.89) rotate(-128.12)"><tspan x="0" y="0"> </tspan></text>
+          <text class="cls-3" transform="translate(67.81 199.73) rotate(-123.27)"><tspan x="0" y="0">•</tspan></text>
+          <text class="cls-2" transform="translate(63.41 192.82) rotate(-118.42)"><tspan x="0" y="0"> </tspan></text>
+          <text class="cls-2" transform="translate(59.81 185.98) rotate(-113.7)"><tspan x="0" y="0"> </tspan></text>
+          <text class="cls-2" transform="translate(56.75 178.92) rotate(-108.06)"><tspan x="0" y="0">V</tspan></text>
+          <text class="cls-2" transform="translate(53.74 169.52) rotate(-101.8)"><tspan x="0" y="0">A</tspan></text>
+          <text class="cls-2" transform="translate(51.54 158.34) rotate(-94.97)"><tspan x="0" y="0">L</tspan></text>
+          <text class="cls-2" transform="translate(50.69 147.12) rotate(-88.29)"><tspan x="0" y="0">E</tspan></text>
+          <text class="cls-2" transform="translate(51.11 136.04) rotate(-81.06)"><tspan x="0" y="0">N</tspan></text>
+          <text class="cls-2" transform="translate(53.27 123.54) rotate(-73.85)"><tspan x="0" y="0">C</tspan></text>
+          <text class="cls-2" transform="translate(56.51 113.06) rotate(-68.35)"><tspan x="0" y="0">I</tspan></text>
+          <text class="cls-2" transform="translate(59.11 106.51) rotate(-62.71)"><tspan x="0" y="0">A</tspan></text>
+          <text class="cls-2" transform="translate(64.54 96.44) rotate(-56.92)"><tspan x="0" y="0"> </tspan></text>
+          <text class="cls-3" transform="translate(68.84 89.99) rotate(-52.09)"><tspan x="0" y="0">•</tspan></text>
+          <text class="cls-2" transform="translate(73.97 83.58) rotate(-47.28)"><tspan x="0" y="0"> </tspan></text>
+          <circle class="cls-1" cx="145.11" cy="145.57" r="67.6"/>
+          <path class="cls-7" d="M97.94,123.69c-.28.46-.09,1.45.4,2.14,2.01,2.82,7.39,3.06,11.13.39,2.01-1.44,2.07-1.48,2.11.4.01,4.76,3.97,6.54,8,3.67,2.3-1.64,3.56-1.58,2.87.12-.45,1.19,1.34,3.21,3.42,3.81,2.12.66,7.35-.65,9.88-2.45,2.82-2.01,11.14-2.39,12.45-.55.74,1.04-6.9,5.53-18.19,10.64-5.53,2.47-11.08,5.39-12.32,6.45-2.12,1.77-2.23,2.11-1.37,3.67.73,1.39,1.77,1.87,4.48,2.27,2.78.36,3.29.6,2.43,1.22-1.5,1.07-1.69,2.86-.46,4.58,1.49,1.97,3.77,2.61,5.44,1.42,1.32-.94,1.36-.89.61,1.82-.92,3.09.11,5.39,2.63,5.76,2.01.39,1.78.55,7.49-6.65,2.75-3.44,6.02-7.51,7.24-9.07,3.62-4.41,9.96-11.1,10.51-11.06.99.16,1.48,5.72.7,7.92-.45,1.19-2.19,3.99-3.98,6.22-5.1,6.24-5.75,9.58-2.51,12.3.89.76.8,1.25-.14,2.36-3.9,4.26-4.97,10.67-1.97,12.08,1.54.81,1.49,1.11-.4,3.33-1.38,1.59-1.85,5.92-.98,9.21.49,1.91.59,1.92,3.52.44,5.37-2.7,14.88-9.93,17.98-13.61,3.93-4.71,5.4-8.98,5.44-15.25-.08-6.8-1.1-13.46-2.28-14.26-.5-.34-.61-.61-.25-.6.41-.03.4-2.37,0-5.12-.98-6.85-.28-13.17,1.88-16.71.97-1.56,2.08-4.26,2.52-5.96.34-1.72.95-3.29,1.3-3.53s.2-.57-.18-.74c-.42-.22-1.22,0-1.73.37s-2.1.46-3.52.17c-1.32-.27-3.36-.21-4.49.16-2.66.77-3.86.06-8.52-5.12-9.16-10.04-18.9-13.95-30.05-12.06q-4.54.81-17.57,9.93c-7.17,5.03-13.29,9.48-13.51,9.9Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

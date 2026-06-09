@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Yoga con Rocío</title>
+  <link rel="icon" type="image/svg+xml" href="img/espiral.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <style>
+    @font-face {
+      font-family: 'ShinyMarker';
+      src: url('../Shiny_Marker_Regular.otf') format('opentype');
+    }
+    @font-face {
+      font-family: 'SundayMorning';
+      src: url('../SUNDAY_MORNING.OTF') format('opentype');
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --beige: #f2e2c4;
+      --verde-oscuro: #627356;
+      --verde-claro: #b6bf93;
+      --naranja: #bf612a;
+      --marron: #733a19;
+      --marron-texto: #3d2010;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Lato', sans-serif;
+      background: #f2e2c4;
+      color: var(--marron-texto);
+      overflow-x: hidden;
+    }
+
+    /* ── NAVBAR ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: center;
+      padding: 24px 48px;
+      background: rgba(242,226,196,0.92);
+      backdrop-filter: blur(8px);
+      border-bottom: 0.5px solid rgba(61,32,16,0.08);
+    }
+
+    nav ul { list-style: none; display: flex; gap: 48px; }
+
+    nav a {
+      text-decoration: none;
+      font-family: 'Lato', sans-serif;
+      font-weight: 400;
+      font-size: 13px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--marron-texto);
+      transition: opacity 0.2s;
+    }
+
+    nav a:hover { opacity: 0.5; }
+    nav a.active { opacity: 0.5; }
+
+    /* ── HAMBURGER ── */
+    .hamburger {
+      display: none;
+      position: fixed;
+      top: 20px; right: 24px;
+      z-index: 200;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 4px;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 24px; height: 2px;
+      background: var(--marron);
+      border-radius: 2px;
+    }
+
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: var(--beige);
+      z-index: 150;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .mobile-menu.open { display: flex; }
+
+    .mobile-menu a {
+      font-size: 20px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--marron-texto);
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 28px; right: 28px;
+      background: none; border: none;
+      font-size: 28px; cursor: pointer;
+      color: var(--marron-texto);
+    }
+
+    /* ── HERO DEL BLOG ── */
+    .blog-hero {
+      background: var(--verde-oscuro);
+      padding: 120px 60px 80px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 40vh;
+    }
+
+    .blog-hero-ilu {
+      position: absolute;
+      pointer-events: none;
+      opacity: 1;
+    }
+
+    .blog-hero-ilu--sol {
+      width: 100px;
+      left: 6%;
+      top: 50%;
+      transform: translateY(-50%);
+   animation: float 6s ease-in-out infinite;
+    }
+
+    .blog-hero-ilu--planeta {
+      width: 80px;
+      right: 8%;
+      top: 20%;
+     animation: float 4s ease-in-out infinite;
+    }
+
+    .blog-hero-ilu--gota {
+      width: 90px;
+      right: 5%;
+      bottom: 15%;
+    animation: sway 5s ease-in-out infinite;
+      transform-origin: bottom center;
+    }
+
+    .blog-hero-ilu--hoja {
+      width: 70px;
+      left: 12%;
+      bottom: 10%;
+      animation: sway 2s ease-in-out infinite;
+      transform-origin: bottom center;
+    }
+
+    .blog-hero-inner {
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .blog-hero-label {
+      font-family: 'ShinyMarker', serif;
+      font-size: 18px;
+      letter-spacing: 0.12em;
+      color: var(--verde-claro);
+      display: block;
+      margin-bottom: 16px;
+      opacity: 0;
+      transform: translateY(12px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .blog-hero-label.visible { opacity: 1; transform: translateY(0); }
+
+    .blog-hero-titulo {
+      font-family: 'SundayMorning', serif;
+      font-size: clamp(52px, 10vw, 120px);
+      color: #f2e2c4;
+      line-height: 1;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease 0.15s, transform 0.8s ease 0.15s;
+    }
+
+    .blog-hero-titulo.visible { opacity: 1; transform: translateY(0); }
+
+    /* ── GRID DE POSTS ── */
+    .blog-grid-wrap {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 80px 120px 100px;
+    }
+
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    /* card */
+    .blog-card {
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.7s ease, transform 0.7s ease, box-shadow 0.3s ease;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .blog-card:nth-child(2) { transition-delay: 0.1s; }
+    .blog-card:nth-child(3) { transition-delay: 0.2s; }
+
+    .blog-card.visible { opacity: 1; transform: translateY(0); }
+
+    .blog-card:hover { box-shadow: 0 12px 36px rgba(61,32,16,0.12); }
+
+    .blog-card-img {
+      width: 100%;
+      aspect-ratio: 16/10;
+      overflow: hidden;
+      background: #d4c8b8;
+    }
+
+    .blog-card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+
+    .blog-card:hover .blog-card-img img { transform: scale(1.05); }
+
+    .blog-card-body {
+      padding: 24px 24px 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .blog-card-fecha {
+      font-family: 'Lato', sans-serif;
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      color: var(--verde-claro);
+      text-transform: uppercase;
+    }
+
+    .blog-card-titulo {
+      font-family: 'new-spirit', 'Playfair Display', serif;
+      font-size: 19px;
+      font-weight: 500;
+      color: var(--marron-texto);
+      line-height: 1.4;
+    }
+
+    .blog-card-desc {
+      font-family: 'Lato', sans-serif;
+      font-size: 14px;
+      line-height: 1.7;
+      color: #7a5c48;
+    }
+
+    .blog-card-link {
+      font-family: 'Lato', sans-serif;
+      font-size: 13px;
+      letter-spacing: 0.08em;
+      color: var(--verde-oscuro);
+      margin-top: 4px;
+      transition: color 0.2s;
+    }
+
+    .blog-card:hover .blog-card-link { color: var(--naranja); }
+
+    /* ── KEYFRAMES ── */
+    @keyframes spinSlow {
+      from { transform: rotate(0deg); }
+      to   { transform: rotate(360deg); }
+    }
+    @keyframes sway {
+      0%, 100% { transform: rotate(-6deg); }
+      50%       { transform: rotate(6deg); }
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50%       { transform: translateY(-12px); }
+    }
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-10px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      nav { display: none; }
+      .hamburger { display: flex; }
+      .blog-hero { padding: 100px 24px 60px; }
+      .blog-grid-wrap { padding: 48px 24px 60px; }
+      .blog-grid { grid-template-columns: 1fr; }
+
+       .blog-hero-ilu--sol {
+      width: 80px;
+      left: 6%;
+      top: 60%;
+    }
+
+      .blog-hero-ilu--hoja {
+      width: 40px;
+      left: 25%;
+      bottom: 10%;
+      }
+}
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="../index.html#inicio">Inicio</a></li>
+      <li><a href="../index.html#sobre-mi">Sobre mí</a></li>
+            <li><a href="../index.html#clases">Clases</a></li>
+      <li><a href="../index.html#galeria">Galería</a></li>
+      <li><a href="blog.html" class="active">Blog</a></li>
+      <li><a href="../index.html#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <button class="hamburger" onclick="openMenu()" aria-label="Abrir menú">
+    <span></span><span></span><span></span>
+  </button>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="close-btn" onclick="closeMenu()">✕</button>
+    <a href="../index.html#inicio"   onclick="closeMenu()">Inicio</a>
+    <a href="../index.html#sobre-mi" onclick="closeMenu()">Sobre mí</a>
+       <a href="../index.html#clases"   onclick="closeMenu()">Clases</a>
+    <a href="../index.html#galeria"  onclick="closeMenu()">Galería</a>
+    <a href="blog.html"           onclick="closeMenu()">Blog</a>
+    <a href="../index.html#contacto" onclick="closeMenu()">Contacto</a>
+  </div>
+
+  <!-- HERO -->
+  <header class="blog-hero">
+
+    <img src="../img/logo-rocio.svg"     class="blog-hero-ilu blog-hero-ilu--sol"     alt="" aria-hidden="true" />
+    <img  src="../img/alga.svg"  class="blog-hero-ilu blog-hero-ilu--planeta" alt="" aria-hidden="true" />
+    <img src="../img/Shanti_1.png"   class="blog-hero-ilu blog-hero-ilu--gota"    alt="" aria-hidden="true" />
+    <img src="../img/estrella.svg"   class="blog-hero-ilu blog-hero-ilu--hoja"    alt="" aria-hidden="true" />
+
+    <div class="blog-hero-inner">
+      <span class="blog-hero-label">Reflexiones y aprendizajes</span>
+      <h1 class="blog-hero-titulo">Blog</h1>
+    </div>
+  </header>
+
+  <!-- GRID DE POSTS -->
+  <main class="blog-grid-wrap">
+    <div class="blog-grid">
+
+      <!-- POST 1 -->
+      <a href="como-empezar-en-el-yoga.html" class="blog-card">
+        <div class="blog-card-img">
+          <img src="../img/blog-1.jpg" alt="Cómo empezar en el yoga" />
+        </div>
+        <div class="blog-card-body">
+                    <p class="blog-card-fecha">5 Junio 2025</p>
+          <h2 class="blog-card-titulo">Cómo empezar en el yoga si nunca lo has practicado</h2>
+          <p class="blog-card-desc">Dar el primer paso puede parecer difícil. Pero no necesitas ser flexible para comenzar.</p>
+          <span class="blog-card-link">Leer más </span>
+        </div>
+      </a>
+
+      <!-- POST 2 -->
+      <a href="respiracion-consciente.html" class="blog-card">
+        <div class="blog-card-img">
+          <img src="../img/blog-2.jpg" alt="Respiración consciente" />
+        </div>
+        <div class="blog-card-body">
+          <p class="blog-card-fecha">5 Junio 2025</p>
+          <h2 class="blog-card-titulo">Respiración consciente para reducir el estrés</h2>
+          <p class="blog-card-desc">La respiración es un reflejo de cómo nos sentimos. Podemos influir en nuestro estado interno a través de ella.</p>
+          <span class="blog-card-link">Leer más </span>
+        </div>
+      </a>
+
+      <!-- POST 3 -->
+      <a href="rishikesh.html" class="blog-card">
+        <div class="blog-card-img">
+          <img src="../img/blog-3.jpg" alt="Mi mes en Rishikesh" />
+        </div>
+        <div class="blog-card-body">
+          <p class="blog-card-fecha">5 Junio 2025</p>
+                    <h2 class="blog-card-titulo">Mi mes en Rishikesh: lo que nadie te cuenta</h2>
+          <p class="blog-card-desc">Tenía pocas certezas y muchas dudas. Así llegué a India a estudiar yoga con grandes maestros.</p>
+          <span class="blog-card-link">Leer más </span>
+        </div>
+      </a>
+
+    </div>
+  </main>
+
+  <script>
+    function openMenu()  { document.getElementById('mobileMenu').classList.add('open'); }
+    function closeMenu() { document.getElementById('mobileMenu').classList.remove('open'); }
+
+    // hero al cargar
+    window.addEventListener('load', () => {
+      document.querySelector('.blog-hero-label')?.classList.add('visible');
+      setTimeout(() => document.querySelector('.blog-hero-titulo')?.classList.add('visible'), 200);
+    });
+
+    // cards al hacer scroll
+    const cards = document.querySelectorAll('.blog-card');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.15 });
+
+    cards.forEach(c => observer.observe(c));
+  </script>
+
+</body>
+</html>

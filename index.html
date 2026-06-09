@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yoga con Rocío</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://use.typekit.net/ljf5fbm.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="img/espiral.svg">
+  <style>
+   
+
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#clases">Clases</a></li>
+  
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <button class="hamburger" onclick="openMenu()" aria-label="Abrir menú">
+    <span></span><span></span><span></span>
+  </button>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="close-btn" onclick="closeMenu()">✕</button>
+    <a href="#inicio"   onclick="closeMenu()">Inicio</a>
+        <a href="#sobre-mi" onclick="closeMenu()">Sobre mí</a>
+            <a href="#clases"   onclick="closeMenu()">Clases</a>
+    <a href="#galeria"  onclick="closeMenu()">Galería</a>
+    <a href="#blog"     onclick="closeMenu()">Blog</a>
+    <a href="#contacto" onclick="closeMenu()">Contacto</a>
+  </div>
+
+  <section class="hero" id="inicio">
+    <div class="hero-bg"></div>
+
+    <img class="sticker sticker-logo"     src="img/logo-rocio.svg"    alt="Yoga con Rocío" />
+    <img class="sticker sticker-hoja"     src="img/alga.svg"    alt="" aria-hidden="true" />
+    <img class="sticker sticker-shanti"   src="img/Shanti_1.png"  alt="Shanti" />
+    <img class="sticker sticker-estrella" src="img/estrella.svg" alt="" aria-hidden="true" />
+    <img class="sticker sticker-planeta"  src="img/planeta.svg" alt="" aria-hidden="true" />
+    <img class="sticker sticker-circle"   src="img/Caracol_1.png"  alt="Yoga con Rocío Valencia" />
+
+    <div class="hero-frase">
+      <span class="hero-frase-text" id="typewriter"></span>
+      <span class="cursor" id="cursor"></span>
+    </div>
+  </section>
+
+  <!-- ── SOBRE MÍ ── -->
+  <section id="sobre-mi" style="background: #f2e2c4;">
+    <div class="about-container">
+
+      <!-- IZQUIERDA: texto -->
+      <div class="about-text">
+        <p class="about-label">Namaste</p>
+        <h2 class="about-titulo">Soy Rocío</h2>
+        <p class="about-subtitulo">Aprendiz e instructora de yoga.</p>
+        <div class="about-bio">
+  <p>En 2017 tomé mis primeras clases de yoga, movida por mis recurrentes dolores de espalda, producidos por el trabajo en la oficina y el estrés. Nunca hubiera imaginado a dónde esos primeros pasos me llevarían.</p>
+  <p>Luego de varios años de práctica —por momentos de manera regular y por otros no tanto—, siempre supe que el yoga me ayudaba a sentirme mejor.</p>
+
+  <div class="about-bio-extra">
+    <p>En 2023 quise profundizar aún más mi práctica. Buscaba más disciplina para practicar de manera regular y entender más sobre filosofía. Aun con mi trabajo en la oficina, dediqué ese año a aprender más sobre esta ciencia milenaria en <strong>Arama Yoga, Argentina</strong>. Al finalizar el año, descubrí qué era lo que quería hacer en mi vida:<strong> compartir ese bienestar con otras personas.</strong></p>
+    <p>En 2024 me mudé a Valencia y comencé a guiar mis primeras clases en el <strong>Jardín del Turia</strong>. Ese mismo año compartí prácticas en centros de adultos mayores del ayuntamiento, junto a un grupo maravilloso. Fui conociendo personas que me alentaron a seguir aprendiendo para acompañarlas con mayor seguridad, lo que me llevó a formarme en <strong>Yoga y Embarazo</strong>.</p>
+    <p>En 2025, un año después de comenzar a guiar mis primeras clases, viajé a <strong>Rishikesh</strong>, conocida como la capital mundial del yoga en India, para estudiar en <strong>Swasti Yoga Shala</strong>. Allí tuve el privilegio de aprender guiada por grandes maestros, junto a personas de distintas partes del mundo. Sin dudas, fue una experiencia que transformó mi vida.</p>
+    <p>Hoy en día, continúo estudiando y practicando para conocerme más a mí misma, mientras sigo compartiendo clases en Valencia.</p>
+  </div>
+
+  <button class="about-bio-toggle" onclick="toggleBio(this)">Leer más</button>
+</div>
+        <div class="about-cta">
+  <p class="about-cta-text">Sigue mis aventuras</p>
+  <a href="https://www.instagram.com/rociobelenmoreno/" target="_blank" rel="noopener" class="about-cta-link">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+      <circle cx="12" cy="12" r="4"/>
+      <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+    </svg>
+    Yoga con Rocío
+  </a>
+</div>
+      </div>
+
+      <!-- DERECHA: gif -->
+      <div class="about-gif">
+        <img src="img/Sobre-mi.gif" alt="Rocío practicando yoga" />
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── CLASES ── -->
+  <section id="clases">
+    <!-- fondo foto -->
+    <div class="clases-bg"></div>
+
+    <div class="clases-inner">
+      <p class="clases-label">Clases</p>
+
+      <div class="clases-grid">
+
+        <!-- CARD TURIA -->
+        <!-- CARD TURIA — reemplaza la anterior en index.html -->
+<div class="clase-card clase-card--verde">
+  <div class="clase-card-inner" onclick="openModal('turia')" style="cursor: pointer;">
+
+    <div class="clase-card-video">
+      <video autoplay muted loop playsinline>
+        <source src="img/turia.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="clase-card-body">
+      <h3 class="clase-card-titulo">Jardín del Turia</h3>
+      <p class="clase-card-desc">Conecta con tu práctica rodeada de naturaleza, en uno de los parques más hermosos de Valencia. Clases para todos los niveles.</p>
+       <p class="clase-card-info">TODOS LOS SÁBADOS</p>
+      <button class="clase-card-btn" onclick="openModal('turia')">Más información</button>
+    </div>
+  </div>
+  <img src="img/aire-libre.png" class="card-sticker-turia" alt="Al aire libre" />
+</div>
+
+        <!-- CARD SEIJAKU -->
+        <!-- CARD SEIJAKU — reemplaza la anterior en index.html -->
+<div class="clase-card clase-card--arena">
+  <div class="clase-card-inner" onclick="openModal('seijaku')" style="cursor: pointer;">
+    <div class="clase-card-video">
+      <video autoplay muted loop playsinline>
+        <source src="img/seijaku.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="clase-card-body">
+      <h3 class="clase-card-titulo">Aero Studio Seijaku</h3>
+      <p class="clase-card-desc">Un espacio íntimo y acogedor para profundizar tu práctica. Clases en grupo reducido con atención personalizada.</p>
+      <p class="clase-card-info">LUNES A VIERNES</p>
+      <button class="clase-card-btn" onclick="openModal('seijaku')">Más información</button>
+    </div>
+  </div>
+</div>
+ 
+
+      </div>
+    </div>
+
+    <!-- MODAL TURIA — reemplaza el anterior en index.html -->
+<div class="modal-overlay" id="modal-turia" onclick="closeModalOutside(event, 'turia')">
+  <div class="modal modal-turia">
+    <button class="modal-close" onclick="closeModal('turia')">✕</button>
+
+    <h3 class="modal-titulo">Jardín del Turia</h3>
+    <p class="modal-horario">SABADOS 11 AM</p>
+
+    <div class="modal-block">
+      <h4 class="modal-subtitle">Sobre las clases</h4>
+      <p class="modal-text">Guío clases de <strong>Hatha Vinyasa</strong>, combinando ambos estilos para crear un balance entre el movimiento y la quietud.</p>
+       <p class="modal-text"> Conectamos con nuestro cuerpo a través de técnicas de respiración consciente y pranayamas que nos ayudan a anclarnos en el presente y a guiar la mente hacia un estado de calma y bienestar.</p>
+      <p class="modal-text">Cada encuentro finaliza con una relajación en savasana, acompañada por la vibración de los cuencos tibetanos.</p>
+    </div>
+
+    <div class="modal-block">
+      <h4 class="modal-subtitle">Ubicación</h4>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3079.669790935382!2d-0.37282292403519335!3d39.47678797160611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMznCsDI4JzM2LjQiTiAwwrAyMicxMi45Ilc!5e0!3m2!1ses-419!2sar!4v1780502017997!5m2!1ses-419!2sar"
+        width="100%"
+        height="200"
+        style="border:0; border-radius: 10px; display: block;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+    <div class="modal-block">
+      <h4 class="modal-subtitle">Abonos</h4>
+      <div class="modal-abonos">
+        <div class="modal-abono-item">
+          <span class="modal-abono-nombre">Clase individual</span>
+          <span class="modal-abono-precio">7€</span>
+        </div>
+        <div class="modal-abono-item">
+          <span class="modal-abono-nombre">5 clases</span>
+          <span class="modal-abono-precio">30€</span>
+        </div>
+        <div class="modal-abono-item">
+          <span class="modal-abono-nombre">10 clases</span>
+          <span class="modal-abono-precio">50€</span>
+        </div>
+      </div>
+      <p class="modal-nota">Con reserva previa. Pago en efectivo.<br>Los abonos corresponden únicamente a las clases en el Jardín del Turia.</p>
+    </div>
+    <a href="https://wa.me/34627546891?text=Hola%20Roc%C3%ADo%2C%20me%20gustar%C3%ADa%20reservar%20una%20clase%20en%20el%20Turia"
+      target="_blank" rel="noopener" class="modal-btn">Reservar por WhatsApp</a>
+  </div>
+</div>
+
+    <!-- MODAL SEIJAKU -->
+    <!-- MODAL SEIJAKU — reemplaza el placeholder en index.html -->
+<div class="modal-overlay" id="modal-seijaku" onclick="closeModalOutside(event, 'seijaku')">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('seijaku')">✕</button>
+
+    <h3 class="modal-titulo">Aero Studio Seijaku</h3>
+    <h4 class="modal-subtitle">Horarios</h4>
+
+    <div class="modal-block">
+      <div class="modal-horarios">
+        <div class="modal-horario-row">
+          <span class="modal-horario-dia">Lunes</span>
+          <span class="modal-horario-hora">9.00 hs</span>
+        </div>
+        <div class="modal-horario-row">
+          <span class="modal-horario-dia">Martes</span>
+          <span class="modal-horario-hora">19.30 hs</span>
+          <span class="modal-horario-tag">Candlelight</span>
+        </div>
+        <div class="modal-horario-row">
+          <span class="modal-horario-dia">Miercoles</span>
+          <span class="modal-horario-hora">11.00 hs</span>
+        </div>
+        <div class="modal-horario-row">
+          <span class="modal-horario-dia">Jueves</span>
+          <span class="modal-horario-hora">8.00 hs</span>
+        </div>
+        <div class="modal-horario-row">
+          <span class="modal-horario-dia">Viernes</span>
+          <span class="modal-horario-hora">17.00 hs</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-block">
+      <h4 class="modal-subtitle">Sobre las clases</h4>
+      <p class="modal-text">Un espacio íntimo y acogedor en Ruzafa, con todos los elementos necesarios para profundizar tu práctica.</p>
+      <p class="modal-text">Clases en grupo reducido y con atención personalizada, integrando movimiento consciente, respiración y presencia.</p>
+         <p class="modal-text">Cada encuentro finaliza con una relajación en savasana, acompañada por la vibración de los cuencos tibetanos.</p>
+    </div>
+
+    <div class="modal-block">
+      <h4 class="modal-subtitle">Ubicación</h4>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3080.4384014328502!2d-0.3788849245661874!3d39.45942361334806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f001e94b3c5%3A0xb3dc028ff9d1d281!2sAero%20Studio%20Seijaku%20-%20Yoga%20A%C3%A9reo%2C%20Reformer%20y%20Barre!5e0!3m2!1ses-419!2sar!4v1780503614282!5m2!1ses-419!2sar"
+        width="100%"
+        height="200"
+        style="border:0; border-radius: 10px; display: block;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+    <p class="modal-text">Reservas a través de la web del estudio.</p>
+    <a href="https://web.timp.pro/home/15352/branch_building#/home/15352/branch_building"
+      target="_blank" rel="noopener" class="modal-btn">Reservar</a>
+  </div>
+</div>
+
+  </section>
+
+  <!-- ── EVENTOS ESPECIALES ── -->
+  <section id="eventos">
+    <div class="eventos-inner">
+
+      <!-- izquierda: polaroid -->
+      <div class="eventos-polaroid-wrap">
+        <div class="eventos-polaroid">
+          <img src="img/yoga-playa.png" alt="Evento especial" />
+        </div>
+      </div>
+
+      <!-- derecha: texto -->
+      <div class="eventos-text">
+        <p class="eventos-stay"><span id="eventos-typewriter"></span><span class="eventos-cursor">|</span></p>
+        <h2 class="eventos-titulo">Eventos especiales</h2>
+        <p class="eventos-desc">Un espacio para vivir el yoga de manera diferente. Retiros, clases especiales y experiencias únicas en entornos naturales.</p>
+        <a href="https://www.meetup.com/yoga-con-rocio/events/" target="_blank" rel="noopener" class="eventos-btn">Ver próximos eventos</a>
+
+        <!-- ilustraciones abajo derecha -->
+        <div class="eventos-ilus">
+          <img src="img/estrella-ilu.svg" class="eventos-ilu eventos-ilu--estrella" alt="" aria-hidden="true" />
+          <img src="img/alga-ilu.svg"     class="eventos-ilu eventos-ilu--hoja"     alt="" aria-hidden="true" />
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- ── CLASES ONLINE ── -->
+  <section id="clases-online">
+    <div class="online-inner">
+ 
+      <div class="online-text">
+        <p class="online-label">Clases online</p>
+        <h2 class="online-titulo">Practica desde casa</h2>
+        <p class="online-desc">Hatha Vinyasa · Clase completa para principiantes · 50 minutos. Una práctica accesible para todos los niveles, pensada para que puedas moverte y respirar desde donde estés.</p>
+  
+      </div>
+ 
+      <div class="online-video">
+        <div class="online-video-wrap">
+          <iframe
+            src="https://www.youtube.com/embed/xBCOGZPEpLk"
+            title="Hatha Vinyasa — Clase completa para principiantes"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+ 
+    </div>
+  </section>
+
+<!-- ── SEPARADORA ── -->
+  <section id="separadora">
+    <div class="sep-track">
+      <h2 class="sep-text" id="sep-text">
+        SIENTE · RESPIRA · FLUYE · SIENTE · RESPIRA · FLUYE
+      </h2>
+    </div>
+    <img src="img/estrella.svg"     class="sep-ilu sep-ilu--sol"     alt="" aria-hidden="true" />
+    <img src="img/espiral.svg" class="sep-ilu sep-ilu--planeta" alt="" aria-hidden="true" />
+  </section>
+
+  
+<!-- ── GALERÍA ── -->
+  <section id="galeria">
+
+    <!-- título que pisa la primera fila -->
+    <div class="galeria-titulo-wrap">
+    </div>
+
+    <!-- grid -->
+    <div class="galeria-grid">
+      <div class="galeria-item"><img src="img/galeria-1.jpg" alt="" /></div>
+      <div class="galeria-item"><img src="img/galeria-2.jpg" alt="" /></div>
+      <div class="galeria-item"><img src="img/galeria-3.jpg" alt="" /></div>
+      <div class="galeria-item"><img src="img/galeria-4.jpg" alt="" /></div>
+      <div class="galeria-item"><img src="img/galeria-5.jpg" alt="" /></div>
+      <div class="galeria-item"><img src="img/galeria-6.jpg" alt="" /></div>
+      <div class="galeria-item"><img src="img/galeria-7.jpg" alt="" /></div>
+      <div class="galeria-item"><img src="img/galeria-8.jpg" alt="" /></div>
+      <div class="galeria-item final"><img src="img/galeria-9.jpg" alt="" /></div>
+    </div>
+
+  </section>
+
+
+ <!-- ── BLOG ── -->
+<section id="blog">
+  <div class="blog-inner">
+
+    <div class="blog-header">
+      <p class="blog-label">reflexiones y aprendizajes</p>
+      <h2 class="blog-titulo">Blog</h2>
+    </div>
+
+    <div class="blog-grid">
+
+      <!-- POST 1 -->
+      <a href="blog/como-empezar-en-el-yoga.html" class="blog-card">
+        <div class="blog-card-img">
+          <img src="img/blog-1.jpg" alt="Cómo empezar en el yoga" />
+        </div>
+        <div class="blog-card-body">
+          <p class="blog-card-fecha">5 de Junio 2026</p>
+          <h3 class="blog-card-titulo">Cómo empezar en el yoga si nunca lo has practicado</h3>
+          <p class="blog-card-desc">Dar el primer paso puede parecer difícil, pero el yoga te recibe exactamente donde estás. Sin exigencias, sin comparaciones.</p>
+          <span class="blog-card-link">Leer más</span>
+        </div>
+      </a>
+
+      <!-- POST 2 -->
+      <a href="blog/respiracion-consciente.html" class="blog-card">
+        <div class="blog-card-img">
+          <img src="img/blog-2.jpg" alt="Respiración consciente" />
+        </div>
+        <div class="blog-card-body">
+          <p class="blog-card-fecha">5 de Junio 2026</p>
+          <h3 class="blog-card-titulo">Respiración consciente para reducir el estrés</h3>
+          <p class="blog-card-desc">El pranayama es mucho más que respirar. Es una herramienta poderosa para calmar el sistema nervioso y encontrar presencia.</p>
+          <span class="blog-card-link">Leer más</span>
+        </div>
+      </a>
+
+      <!-- POST 3 -->
+      <a href="blog/rishikesh.html" class="blog-card">
+        <div class="blog-card-img">
+          <img src="img/blog-3.jpg" alt="Mi mes en Rishikesh" />
+        </div>
+        <div class="blog-card-body">
+          <p class="blog-card-fecha">5 de Junio 2026</p>
+          <h3 class="blog-card-titulo">Mi mes en Rishikesh: lo que nadie te cuenta</h3>
+          <p class="blog-card-desc">Estudiar yoga en India fue mucho más que una formación. Fue un viaje hacia adentro que cambió mi manera de ver la práctica.</p>
+          <span class="blog-card-link">Leer más</span>
+        </div>
+      </a>
+
+    </div>
+
+    <div class="blog-footer">
+      <a href="blog/blog.html" class="blog-btn">Ver todos los posts</a>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- ── CONTACTO ── -->
+  <section id="contacto">
+
+    <!-- card que pisa el footer -->
+    <div class="contacto-wrap">
+      <div class="contacto-card">
+        <div class="contacto-card-content">
+          <h2 class="contacto-titulo"></h2>
+          <p class="contacto-desc">Escríbeme y encontramos el espacio ideal para ti.</p>
+          <div class="contacto-btns">
+            <a href="https://wa.me/34627546891?text=Hola%20Roc%C3%ADo%2C%20me%20gustar%C3%ADa%20info%20sobre%20las%20clases"
+              target="_blank" rel="noopener" class="contacto-btn contacto-btn--wp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+              </svg>
+              WhatsApp
+            </a>
+            <a href="https://instagram.com/rociobelenmoreno"
+              target="_blank" rel="noopener" class="contacto-btn contacto-btn--ig">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <circle cx="12" cy="12" r="4"/>
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+              </svg>
+              Instagram
+            </a>
+          </div>
+        </div>
+      </div>
+      
+        <!-- ilustración saliendo de la card -->
+        <div class="contacto-ilu">
+          <img src="img/contact.gif" alt="" aria-hidden="true" />
+        </div>
+    </div>
+
+    <!-- footer oscuro -->
+    <div class="contacto-footer">
+ <a href="#inicio">
+  <img src="img/logo_blanco.svg" class="footer-logo" alt="Yoga con Rocío" />
+</a>
+      <p class="footer-copy">© 2026 Yoga con Rocío · Valencia</p>
+      <div class="footer-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#clases">Clases</a>
+        <a href="#galeria">Galería</a>
+        <a href="/blog/blog.html">Blog</a>
+      </div>
+    </div>
+
+  </section>
+  <!-- WhatsApp flotante -->
+  <a href="https://wa.me/34627546891?text=Hola%20Roc%C3%ADo%2C%20me%20gustar%C3%ADa%20info%20sobre%20las%20clases"
+    target="_blank" rel="noopener" aria-label="Contactar por WhatsApp"
+    style="position:fixed;bottom:28px;right:28px;z-index:999;width:52px;height:52px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(37,211,102,0.4);transition:transform 0.2s;"
+    onmouseover="this.style.transform='scale(1.1)'"
+    onmouseout="this.style.transform='scale(1)'">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="white">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+    </svg>
+  </a>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>

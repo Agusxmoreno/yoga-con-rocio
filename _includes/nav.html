@@ -1,0 +1,24 @@
+<nav>
+  <ul>
+    <li><a href="/#inicio">Inicio</a></li>
+    <li><a href="/#sobre-mi">Sobre mí</a></li>
+        <li><a href="/#clases">Clases</a></li>
+    <li><a href="/#galeria">Galería</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="/#contacto">Contacto</a></li>
+  </ul>
+</nav>
+
+<button class="hamburger" onclick="openMenu()" aria-label="Abrir menú">
+  <span></span><span></span><span></span>
+</button>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="close-btn" onclick="closeMenu()">✕</button>
+  <a href="/#inicio"   onclick="closeMenu()">Inicio</a>
+  <a href="/#sobre-mi" onclick="closeMenu()">Sobre mí</a>
+    <a href="/#clases"   onclick="closeMenu()">Clases</a>
+  <a href="/#galeria"  onclick="closeMenu()">Galería</a>
+  <a href="/blog/"     onclick="closeMenu()">Blog</a>
+  <a href="/#contacto" onclick="closeMenu()">Contacto</a>
+</div>

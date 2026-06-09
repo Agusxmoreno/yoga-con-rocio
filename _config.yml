@@ -1,0 +1,24 @@
+title: Yoga con Rocío
+description: Clases de yoga en Valencia con Rocío
+url: "https://yogaconrocio.com"
+baseurl: ""
+
+# Configuración del blog
+permalink: /blog/:slug/
+
+# Plugins
+plugins:
+  - jekyll-feed
+
+# Excluir archivos innecesarios
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# Colecciones
+collections:
+  posts:
+    output: true
+    permalink: /blog/:slug/

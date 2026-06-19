@@ -45,4 +45,5 @@ También se describe como ecuanimidad. No somos indiferentes hacia la persona, s
 
 > Mi maestro suele decir que el yoga nos hace mejores seres humanos, porque nos enseña a pensar desde el corazón y no desde la mente que juzga. Nos invita a ver a los otros con los ojos de un amigo.
 
+\---\
 Quizás *Ahimsa* no consista en alcanzar una perfección imposible, sino en el esfuerzo cotidiano de reducir la violencia a su mínima expresión, cultivando amistad, compasión, alegría y ecuanimidad en nuestra manera de relacionarnos con nosotros mismos, con los demás y con el mundo.

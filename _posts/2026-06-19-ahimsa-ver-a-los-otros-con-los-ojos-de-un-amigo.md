@@ -9,7 +9,7 @@ description: "El 21 de Junio se celebra el Día Internacional del Yoga y me
 ---
 ## ¿Qué es yoga y por qué hablar de Ahimsa hoy?
 
-Hagamos una breve introducción para ponernos en contexto.
+En este **Día Internacional del Yoga**, quiero compartir una de las enseñanzas que más me inspira: ***Ahimsa*, la no violencia**. Pero antes, hagamos una breve introducción para ponernos en contexto. 
 
 La palabra *yoga* significa unión y proviene de la raíz sánscrita *yuj*. Esta unión sucede en muchos niveles: podemos entenderla como la unión entre cuerpo y mente, pensamiento y acción, entre la conciencia individual y la conciencia universal. Pero también como la unión entre todos nosotros, reconociéndonos como parte de una misma existencia.
 

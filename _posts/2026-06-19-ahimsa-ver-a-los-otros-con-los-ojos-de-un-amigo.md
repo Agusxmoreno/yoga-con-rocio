@@ -29,6 +29,8 @@ Teniendo esto en cuenta, podemos aprender a separar las acciones de las personas
 
 ## Maitri, Karuna, Mudita y Upeksha
 
+![](/img/blog/yoga.-ahimsa-2.png)
+
 En el Sutra I.33, Patanjali nos ofrece una guía práctica para cultivar una mente más serena y menos violenta a través de cuatro actitudes: *Maitri, Karuna, Mudita y Upeksha.*
 
 ***Maitri*** es amistad, amabilidad y amor. Es la capacidad de alegrarnos por la felicidad de quien se siente feliz.
